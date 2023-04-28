@@ -1,7 +1,24 @@
+.thumbnail-row{
+    margin-bottom: 12px;
+    position: relative;
+}
 
 .thumbnail{
     width: 100%;
     border-radius: 20px;
+}
+
+.video-time{
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 10px;
+    right: 5px;
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 3px;
 }
 
 .video-title{
@@ -10,6 +27,7 @@
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 12px;
+    border-radius: 2px;
 }
 
 .video-author,
@@ -26,10 +44,6 @@
     border-radius: 100%;
 }
 
-.thumbnail-row{
-    margin-bottom: 12px;
-}
-
 .video-info-grid{
     display: grid;
     grid-template-columns: 50px 1fr;
@@ -40,4 +54,22 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
+}
+
+@media (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width:999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width : 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
